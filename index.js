@@ -31,7 +31,7 @@ app.get('/', async (req, res) => {
 
     } else {
         console.log('redirect');
-        res.redirect(`https://account-d.docusign.com/oauth/auth?response_type=code&scope=impersonation%20signature&client_id=${process.env.INTEGRATION_KEY}&redirect_uri=http://localhost:3000/callback`);
+        res.redirect(`https://account-d.docusign.com/oauth/auth?response_type=code&scope=impersonation%20signature&client_id=${process.env.INTEGRATION_KEY}&redirect_uri=https://docusignintegration.onrender.com/callback`);
     }
 });
 
